@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f5f0e8;
+  color: #342d25;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.serif {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.container-x {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+::selection {
+  background: #a7654c;
+  color: white;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
