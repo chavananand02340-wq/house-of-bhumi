@@ -12,8 +12,8 @@ html {
 
 body {
   margin: 0;
-  background: #f5f0e8;
-  color: #342d25;
+  background: #f8f2e9;
+  color: #342d28;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,16 +22,31 @@ body {
 }
 
 .container-x {
-  width: min(1180px, calc(100% - 40px));
+  width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
 }
 
 ::selection {
-  background: #a7654c;
-  color: white;
+  background: #a96755;
+  color: #ffffff;
 }
 
 button,
-a {
+a,
+input {
   -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+input::placeholder {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .container-x {
+    width: min(1180px, calc(100% - 64px));
+  }
 }
