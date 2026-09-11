@@ -5,67 +5,93 @@ export type Product = {
   category: string;
   description: string;
   image: string;
+  badge?: string;
 };
 
 export const products: Product[] = [
   {
-    slug: "terra-vase",
-    name: "Terra Vase",
-    price: 1890,
-    category: "Decor",
+    slug: "personalized-name-pouch",
+    name: "Personalized Name Pouch",
+    price: 299,
+    category: "Personalized Gifts",
     description:
-      "A sculptural handcrafted vase with an earthy finish, designed to bring quiet character to your space.",
+      "A stylish personalized pouch with your name printed beautifully. Perfect for birthdays, bridesmaids, return gifts and everyday gifting.",
     image:
-      "https://images.unsplash.com/photo-1612196808214-b8e1d6145a8c?auto=format&fit=crop&w=1200&q=85"
+      "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=1200&q=85",
+    badge: "BESTSELLER"
   },
   {
-    slug: "linen-throw",
-    name: "Linen Throw",
-    price: 3290,
-    category: "Textiles",
+    slug: "custom-name-bottle",
+    name: "Custom Name Bottle",
+    price: 499,
+    category: "Personalized Gifts",
     description:
-      "Soft natural linen with a relaxed texture. Made for slow mornings and quiet evenings.",
+      "Make everyday moments personal with a premium reusable bottle customized with a name of your choice.",
     image:
-      "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=1200&q=85"
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1200&q=85",
+    badge: "POPULAR"
   },
   {
-    slug: "dune-candle",
-    name: "Dune Candle",
-    price: 1290,
-    category: "Rituals",
+    slug: "personalized-keychain",
+    name: "Personalized Keychain",
+    price: 199,
+    category: "Personalized Gifts",
     description:
-      "A warm, softly scented candle inspired by sun-warmed earth and peaceful interiors.",
+      "A thoughtful little gift customized specially for someone special. Ideal for return gifts and bulk orders.",
     image:
-      "https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=1200&q=85"
+      "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&w=1200&q=85"
   },
   {
-    slug: "earth-tray",
-    name: "Earth Tray",
-    price: 1590,
-    category: "Decor",
+    slug: "corporate-gift-box",
+    name: "Corporate Gift Box",
+    price: 999,
+    category: "Corporate Gifting",
     description:
-      "A simple tactile tray for jewellery, keys, candles and everyday objects.",
+      "A thoughtfully curated gifting box for employees, clients, partners and corporate events.",
     image:
-      "https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=85"
+      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1200&q=85",
+    badge: "CORPORATE"
   },
   {
-    slug: "clay-mug",
-    name: "Clay Mug",
-    price: 990,
-    category: "Kitchen",
+    slug: "premium-desk-kit",
+    name: "Premium Desk Kit",
+    price: 799,
+    category: "Corporate Gifting",
     description:
-      "A beautifully imperfect ceramic mug made for your everyday tea and coffee rituals.",
+      "A practical and elegant desk gifting set designed for professional occasions and employee gifting.",
     image:
-      "https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?auto=format&fit=crop&w=1200&q=85"
+      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=85"
   },
   {
-    slug: "sage-bowl",
-    name: "Sage Bowl",
-    price: 1390,
-    category: "Kitchen",
+    slug: "custom-event-favors",
+    name: "Custom Event Favors",
+    price: 249,
+    category: "Event Gifting",
     description:
-      "A handmade bowl with an organic silhouette and soft sage glaze.",
+      "Personalized gifting favors made for weddings, birthdays, baby showers, corporate events and celebrations.",
     image:
-      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1200&q=85"
+      "https://images.unsplash.com/photo-1513883049090-d0b7439799bf?auto=format&fit=crop&w=1200&q=85",
+    badge: "BULK FRIENDLY"
+  }
+];
+
+export const categories = [
+  {
+    name: "Personalized Gifts",
+    description: "Made specially for them",
+    image:
+      "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=1000&q=85"
+  },
+  {
+    name: "Corporate Gifting",
+    description: "Thoughtful gifts for business",
+    image:
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=85"
+  },
+  {
+    name: "Event Gifting",
+    description: "Celebrate every occasion",
+    image:
+      "https://images.unsplash.com/photo-1513883049090-d0b7439799bf?auto=format&fit=crop&w=1000&q=85"
   }
 ];
